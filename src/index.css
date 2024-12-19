@@ -1,0 +1,159 @@
+:root {
+  --primaryColor: #645cff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  background-color: rgb(248, 250, 252);
+}
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 48px 0px;
+  font-weight: 400;
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  letter-spacing: 1px;
+}
+section {
+  width: 60vw;
+  margin: 80px auto 0px;
+}
+.list-items {
+  height: 80px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 24px;
+}
+.list-items .list-image-container {
+  width: 80px;
+  overflow: hidden;
+}
+
+.list-items .list-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.list-items .phone-description {
+  flex-grow: 1;
+  margin: 0px 20px;
+}
+.list-items .phone-description h5 {
+  color: rgb(51, 65, 85);
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 1.472rem;
+}
+.list-items .phone-description span {
+  color: rgb(100, 116, 139);
+  margin: 12px 0px;
+}
+.list-items .phone-description button {
+  height: 15px;
+  max-width: fit-content;
+  color: var(--primaryColor);
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.list-items .phone-counter {
+  width: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-items .phone-counter span {
+  color: rgb(15, 23, 42);
+  font-size: 20px;
+}
+
+.list-items .phone-counter .count {
+  height: 20px;
+  width: 20px;
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+.navContainer {
+  height: 80px;
+  background-color: var(--primaryColor);
+}
+.navContainer nav {
+  margin: auto;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+nav .icon {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  display: block;
+}
+nav .icon .icon-cart {
+  position: relative;
+  color: white;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+nav .icon .totalCount {
+  position: absolute;
+  top: -13px;
+  right: -13px;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: rgb(162, 157, 255);
+}
+
+nav .icon .totalCount p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+}
+footer {
+  margin-top: 80px;
+}
+
+footer hr {
+  background-color: rgb(203, 213, 225);
+}
+footer .cart-total {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .cart-total h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+footer .cart-total span {
+  font-size: 1.05rem;
+  font-weight: 400;
+  background-color: var(--primaryColor);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
